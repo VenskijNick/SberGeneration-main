@@ -1,48 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavigationMenu from "./NavigationMenuItem";
-import Home from "./MainScreen";
+import MainScreen from "./MainScreen";
 import Invest from "./Invest";
-import History from "./History";
+import MarketAnalytics from "./MarketAnalytics";
+import MyStocks from "./MyStocks";
 import Profile from "./Profile";
 
-const AppRouter: React.FC = () => {
+const AppRouter = () => {
   return (
     <Router>
-      <NavigationMenu
-        menuItems={[
-          {
-            icon: "your-icon-url",
-            label: "Главная",
-            path: "/",
-          },
-          {
-            icon: "your-icon-url",
-            label: "Инвестиции",
-            path: "/invest",
-          },
-          {
-            icon: "your-logo-url",
-            label: "Лого",
-            path: "/",
-          },
-          {
-            icon: "your-icon-url",
-            label: "История",
-            path: "/history",
-          },
-          {
-            icon: "your-icon-url",
-            label: "Профиль",
-            path: "/profile",
-          },
-        ]}
-      />
+      <NavigationMenu menuItems={[]} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<MainScreen />} />
         <Route path="/invest" element={<Invest />} />
-        <Route path="/history" element={<History />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/my-stocks" element={<MyStocks />} />
       </Routes>
     </Router>
   );
