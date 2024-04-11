@@ -17,7 +17,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ menuItems }) => {
           <div className="flex flex-col justify-center px-7 py-1.5 text-black text-opacity-60">
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f98a630aac6b21a2f1739b88217ca9bc9fba947b1b29976e606c545465150b14?apiKey=a19014d136ea4220b2780e245b371243&"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fceae5af53fc24edfa59b52d38a0f6686%2Fc2cd393580654ac5b473e44a33b63cca?apiKey=a19014d136ea4220b2780e245b371243&"
               alt=""
               className="self-center w-6 aspect-square"
             />
