@@ -3,6 +3,7 @@ import React from "react";
 interface NavigationMenuItem {
   icon: string;
   label: string;
+  path: string;
 }
 
 interface NavigationMenuProps {
